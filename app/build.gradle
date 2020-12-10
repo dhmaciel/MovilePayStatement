@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.movilepaystatement"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -24,24 +24,29 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility Version.java_compatibility
+        targetCompatibility Version.java_compatibility
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = Version.java_jvm_target
     }
 }
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation Deps.kotlin_stdlib
+    implementation Deps.androidx_core_ktx
+    implementation Deps.androidx_app_compat
+    implementation Deps.google_material
+    implementation Deps.constraint_layout
+    implementation Deps.koin_android
+    implementation Deps.koin_androidx_viewmodel
+    implementation Deps.koin_core
+    testImplementation Deps.junit
+    androidTestImplementation Deps.androidx_junit
+    androidTestImplementation Deps.espresso_core
 
-    implementation project(':core')
+    implementation project(":domain")
+    implementation project(":core")
+
 }
