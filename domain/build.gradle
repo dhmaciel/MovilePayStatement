@@ -23,8 +23,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility Version.java_compatibility
-        targetCompatibility Version.java_compatibility
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = Version.java_jvm_target
@@ -35,8 +35,10 @@ dependencies {
 
     implementation Deps.kotlin_stdlib
     implementation Deps.androidx_core_ktx
-    implementation Deps.retrofit
-    implementation Deps.koin_core
-    implementation Deps.moshi_converter
-    implementation Deps.logging_interceptor
+    implementation Deps.kotlinx_coroutines_android
+    testImplementation Deps.junit
+    androidTestImplementation(Deps.mockk)
+    androidTestImplementation(Deps.mockk_android)
+    androidTestImplementation Deps.androidx_junit
+    androidTestImplementation Deps.espresso_core
 }
