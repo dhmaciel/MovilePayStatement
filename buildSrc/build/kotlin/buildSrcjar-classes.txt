@@ -1,0 +1,1 @@
+/Users/bi002511/StudioProjects/MovilePayStatement/buildSrc/build/classes/kotlin/main/Deps.class:/Users/bi002511/StudioProjects/MovilePayStatement/buildSrc/build/classes/kotlin/main/Version.class

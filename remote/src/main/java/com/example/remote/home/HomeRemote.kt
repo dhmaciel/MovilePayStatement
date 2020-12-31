@@ -13,5 +13,5 @@ data class HomeRemote(
 )
 
 fun HomeRemote.toDomain() = Home(
-
+    widgets = widgets.map { it.toDomain() }
 )

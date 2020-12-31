@@ -3,6 +3,7 @@ package com.example.remote.home
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import home.Content
 
 @JsonClass(generateAdapter = true)
 data class ContentRemote(
@@ -14,4 +15,11 @@ data class ContentRemote(
     val cardNumber: String,
     @Json(name = "title")
     val title: String
+)
+
+fun ContentRemote.toDomain() =  Content(
+    balance = balance.toDomain(),
+    button = button.toDomain(),
+    cardNumber = cardNumber,
+    title = title
 )

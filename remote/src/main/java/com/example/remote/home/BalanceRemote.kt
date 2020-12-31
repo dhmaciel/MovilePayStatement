@@ -3,6 +3,7 @@ package com.example.remote.home
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import home.Balance
 
 @JsonClass(generateAdapter = true)
 data class BalanceRemote(
@@ -10,4 +11,9 @@ data class BalanceRemote(
     val label: String,
     @Json(name = "value")
     val value: String
+)
+
+fun BalanceRemote.toDomain() = Balance(
+    label = label,
+    value = value
 )
