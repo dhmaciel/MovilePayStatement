@@ -9,9 +9,9 @@ import home.ContentButton
 @JsonClass(generateAdapter = true)
 data class ContentActionRemote(
     @Json(name = "accountId")
-    val accountId: String,
+    val accountId: String? = null,
     @Json(name = "cardId")
-    val cardId: String
+    val cardId: String? = null
 )
 
 fun ContentActionRemote.toDomain() = ContentButton (

@@ -3,8 +3,8 @@ package home
 import java.io.Serializable
 
 data class Content(
-    val balance: Balance,
-    val button: Button,
-    val cardNumber: String,
+    val balance: Balance? = null,
+    val button: Button? = null,
+    val cardNumber: String? = null,
     val title: String
 ) : Serializable
