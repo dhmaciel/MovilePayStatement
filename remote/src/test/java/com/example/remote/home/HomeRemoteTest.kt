@@ -1,6 +1,7 @@
 package com.example.remote.home
 
 import org.junit.Assert
+import org.junit.Assert.*
 import org.junit.Test
 
 class HomeRemoteTest {
@@ -12,7 +13,8 @@ class HomeRemoteTest {
         //When
         val homeDomain = homeRemote.toDomain()
         // Then
-        Assert.assertEquals(homeRemote.widgets.size, homeDomain.widgets.size)
+        assertNotNull(homeRemote)
+        assertEquals(homeRemote.widgets.size, homeDomain.widgets.size)
     }
 
     private fun getHomeRemoteDummy() =
