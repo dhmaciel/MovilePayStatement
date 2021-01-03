@@ -13,8 +13,8 @@ class WidgetRemoteTest {
         // WHEN
         val domainWidget = widgetRemote.toDomain()
         // THEN
-        assertThat(widgetRemote.identifier, `is`(equalTo(domainWidget.identifier)))
-        assertThat(widgetRemote.content, `is`(notNullValue()))
+        assertThat(domainWidget.identifier, `is`(equalTo(domainWidget.identifier)))
+        assertThat(domainWidget.content, `is`(notNullValue()))
         assertThat(domainWidget.content, `is`(notNullValue()))
     }
 

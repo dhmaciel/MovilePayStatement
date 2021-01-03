@@ -13,8 +13,8 @@ class HomeRemoteTest {
         //When
         val homeDomain = homeRemote.toDomain()
         // Then
-        assertNotNull(homeRemote)
-        assertEquals(homeRemote.widgets.size, homeDomain.widgets.size)
+        assertNotNull(homeDomain)
+        assertEquals(homeDomain.widgets.size, homeDomain.widgets.size)
     }
 
     private fun getHomeRemoteDummy() =
