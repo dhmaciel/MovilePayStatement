@@ -39,4 +39,5 @@ dependencies {
     implementation Deps.koin_core
     implementation Deps.moshi_converter
     implementation Deps.logging_interceptor
+    implementation Deps.androidx_junit
 }

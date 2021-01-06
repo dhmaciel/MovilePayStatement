@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 fun buildRetrofitWith(
-    isDebug: Boolean,
+    isDebug: Boolean = false,
     host: String
 ): Retrofit = retrofitClient(
     host = host,
