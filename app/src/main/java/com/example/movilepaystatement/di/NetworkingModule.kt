@@ -1,6 +1,6 @@
-package com.example.core.services.network.retrofit
+package com.example.movilepaystatement.di
 
-import com.example.core.services.network.StatementService
+import com.example.core.services.network.retrofit.buildRetrofitWith
 import org.koin.dsl.module
 import retrofit2.Retrofit
 
