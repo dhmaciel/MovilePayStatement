@@ -17,4 +17,5 @@ object Version {
     const val mockk = "1.9.3"
     const val logging_interceptor = "4.9.0"
     const val java_jvm_target = "1.8"
+    const val nav_version = "2.3.3"
 }

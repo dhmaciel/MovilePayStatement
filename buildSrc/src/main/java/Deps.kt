@@ -59,4 +59,13 @@ object Deps {
 
     const val mockk =
         "io.mockk:mockk:${Version.mockk}"
+
+    const val navigation =
+        "androidx.navigation:navigation-ui:${Version.nav_version}"
+
+    const val navigation_fragment =
+        "androidx.navigation:navigation-fragment:${Version.nav_version}"
+
+    const val navigation_test =
+        "androidx.navigation:navigation-testing:${Version.nav_version}"
 }

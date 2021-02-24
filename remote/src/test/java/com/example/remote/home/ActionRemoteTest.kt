@@ -1,5 +1,8 @@
 package com.example.remote.home
 
+import com.example.remote.home.entities.ActionRemote
+import com.example.remote.home.entities.ContentActionRemote
+import com.example.remote.home.entities.toDomain
 import org.hamcrest.CoreMatchers.`is`
 import org.junit.Assert.*
 import org.junit.Test

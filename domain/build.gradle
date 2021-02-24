@@ -40,5 +40,4 @@ dependencies {
     androidTestImplementation(Deps.mockk)
     androidTestImplementation(Deps.mockk_android)
     androidTestImplementation Deps.androidx_junit
-    androidTestImplementation Deps.espresso_core
 }

@@ -1,5 +1,7 @@
 package com.example.remote.home
 
+import com.example.remote.home.entities.BalanceRemote
+import com.example.remote.home.entities.toDomain
 import org.hamcrest.CoreMatchers.`is`
 import org.junit.Assert.*
 import org.junit.Test

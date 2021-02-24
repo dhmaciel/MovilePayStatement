@@ -37,6 +37,8 @@ dependencies {
     implementation Deps.androidx_core_ktx
     implementation Deps.moshi_converter
     implementation Deps.moshi
+    implementation Deps.kotlinx_coroutines_android
+    implementation Deps.retrofit
     testImplementation Deps.junit
     androidTestImplementation(Deps.mockk)
     androidTestImplementation(Deps.mockk_android)

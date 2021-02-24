@@ -43,9 +43,12 @@ dependencies {
     implementation Deps.koin_androidx_viewmodel
     implementation Deps.koin_core
     implementation Deps.retrofit
+    implementation Deps.navigation
+    implementation Deps.navigation_fragment
     testImplementation Deps.junit
     androidTestImplementation Deps.androidx_junit
     androidTestImplementation Deps.espresso_core
+    androidTestImplementation Deps.navigation_test
 
     implementation project(":domain")
     implementation project(":remote")
