@@ -5,7 +5,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import home.entities.Content
 
-@JsonClass(generateAdapter = true)
 data class ContentRemote(
     @Json(name = "balance")
     val balance: BalanceRemote? = null,

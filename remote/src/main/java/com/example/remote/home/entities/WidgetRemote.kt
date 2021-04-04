@@ -5,7 +5,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import home.entities.Widgets
 
-@JsonClass(generateAdapter = true)
 data class WidgetRemote(
     @Json(name = "content")
     val content: ContentRemote,

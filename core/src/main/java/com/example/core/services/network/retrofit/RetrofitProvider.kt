@@ -1,5 +1,7 @@
 package com.example.core.services.network.retrofit
 
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -38,6 +40,9 @@ private fun retrofitClient(
         .baseUrl(host)
         .client(httpClient)
         .addConverterFactory(
-            MoshiConverterFactory.create()
+            MoshiConverterFactory.create(getMoshi())
         )
         .build()
+
+private fun getMoshi() =
+    Moshi.Builder().add(KotlinJsonAdapterFactory()).build()

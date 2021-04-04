@@ -5,7 +5,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import home.entities.ContentButton
 
-@JsonClass(generateAdapter = true)
 data class ContentActionRemote(
     @Json(name = "accountId")
     val accountId: String? = null,

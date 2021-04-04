@@ -1,6 +1,7 @@
 package com.example
 
 import android.app.Application
+import com.example.movilepaystatement.di.homeModule
 import com.example.movilepaystatement.di.networkingModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -15,7 +16,7 @@ class App: Application() {
     private fun initiateKoin() {
         startKoin {
             androidContext(this@App)
-            modules(networkingModule)
+            modules(networkingModule, homeModule)
         }
     }
 }

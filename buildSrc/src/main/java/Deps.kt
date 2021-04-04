@@ -52,6 +52,9 @@ object Deps {
     const val moshi_converter =
         "com.squareup.retrofit2:converter-moshi:${Version.moshi_converter}"
 
+    const val moshi_kotlin =
+        "com.squareup.moshi:moshi-kotlin:${Version.moshi}"
+
     const val logging_interceptor =
         "com.squareup.okhttp3:logging-interceptor:${Version.logging_interceptor}"
 

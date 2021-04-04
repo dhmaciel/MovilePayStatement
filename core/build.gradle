@@ -38,6 +38,7 @@ dependencies {
     implementation Deps.retrofit
     implementation Deps.koin_core
     implementation Deps.moshi_converter
+    implementation Deps.moshi_kotlin
     implementation Deps.logging_interceptor
     implementation Deps.androidx_junit
 }

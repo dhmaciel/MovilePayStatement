@@ -5,7 +5,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import home.entities.Balance
 
-@JsonClass(generateAdapter = true)
 data class BalanceRemote(
     @Json(name = "label")
     val label: String,

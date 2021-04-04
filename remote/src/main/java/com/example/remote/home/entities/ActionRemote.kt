@@ -5,7 +5,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import home.entities.Action
 
-@JsonClass(generateAdapter = true)
 data class ActionRemote(
     @Json(name = "content")
     val content: ContentActionRemote,
